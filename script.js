@@ -16,8 +16,9 @@ function myFunc(){
 counter()
 // 2) getRandomNum(max): 1..max int or 0 if invalid
 function getRandomNum(max){
-  Math.random()
-  return (Math.random() * (max)) 
+  max = parseInt(max);
+    if (isNaN(max) || max < 1) return 0;
+    return Math.floor(Math.random() * max) + 1;
 }
 // 3) myAdder(x, y): numeric sum
 function myAdder(x, y){
