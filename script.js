@@ -17,7 +17,7 @@ counter()
 // 2) getRandomNum(max): 1..max int or 0 if invalid
 function getRandomNum(max){
   Math.random()
-  return Math.ceil(Math.random() * (max)) 
+  return (Math.random() * (max)) 
 }
 // 3) myAdder(x, y): numeric sum
 function myAdder(x, y){
